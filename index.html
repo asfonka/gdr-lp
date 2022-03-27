@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GadriY community website</title>
+</head>
+<body>
+    <div class="first-container">
+        <header>
+            <p>Gadriy Community</p>
+            <ul>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+            </ul>
+        </header>
+        <div class="hero">
+            <div>
+                <span>This is going to be my foorst landing page.</span><br><br>
+                this website has subtext that goes underneath the main title. it's a smaller font
+                and the color is lower contrast.
+                <button>Join Us!</button>
+            </div>
+            <div class="pict">
+                <img src="/assets/hero.jpg" alt="library">
+            </div>
+        </div>
+    </div>
+    <div class="second-container">
+        <div class="title">Some random information.</div>
+        <div class="inner-container">
+
+                <div class = "info">                
+                    <img src="assets/sehmi.jpg" alt="sehmi">
+                    <div class="text">Sehmi <br> Pendiri Gadriy</div>
+                </div>
+
+                <div class = "info">
+                    <img src="assets/asfonka.jpg" alt="asfonka">
+                    <div class="text">asfonka <br> Korban pertama</div>
+                </div>
+
+                <div class = "info">
+                    <img src="assets/uyghur.jpg" alt="human">
+                    <div class="text">human <br> Korban kedua</div>
+                </div>
+
+                <div class = "info">
+                    <img src="assets/rsyn.jpg" alt="rsyn.pptx">
+                    <div class="text">rsyn.css <br> Korban wibu</div>
+                </div>
+
+                <div class = "info">
+                    <img src="assets/boy.jpg" alt="boy">
+                    <div class="text">Boy <br> Korban yang sadboy</div>
+                </div>
+
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: inherit;
+    }
+     
+    body {
+        color: aliceblue;
+        font-family: Roboto , sans-serif;
+    }
+
+    ul,a {
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    button {    
+        font-size: 16px;
+        font-weight: bolder;
+        padding: 8px;
+        display: block;
+        border-radius: 12px;
+        border: none;
+        margin-top: 12px;
+        background-color: rgb(49, 210, 250);
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 7px;
+    }
+/* >>>> first container */
+    .first-container {
+        height: 78vh;
+        background-color: #1f2937;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+/* styling items */
+        .first-container > * {
+            width: 85%;
+            display: flex;
+            height: 100vh;
+        }
+/* the header */
+        .first-container > header {
+            flex-basis: content;
+            justify-content: space-between;
+            padding: 16px;
+        }
+
+        .first-container > header > ul {
+            display: flex;
+            gap: 32px;
+            align-items: center;    
+        }
+/* the hero */
+        .first-container > div {
+            align-items: center;
+        }
+
+        .first-container > div > *{
+            width: 50%;
+            height: 50%;
+        }
+
+        .first-container > .hero > div {
+            color: #e5e7eb;
+            font-size: 18px;
+        }
+        .first-container > .hero > div > span {
+            font-size: 28px;
+            font-weight: 800;
+            color: aliceblue;
+        }
+        
+        .first-container > .hero > div > button {
+            color: aliceblue;
+        }
+
+        .first-container > .hero > .pict > img {
+            width: 250px;
+            height: 250px;
+        }
+
+/* second container */
+    .second-container {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap : 25px;
+        align-items: center;
+        height: 75vh;
+    }
+
+    .second-container > *{
+        width: 85%;
+        color: #1f2937;
+    }
+
+    .second-container > .title {
+        font-size: 34px;
+        font-weight: 800;
+        text-align: center;
+        height: auto;
+        padding: 16px;
+    }
+
+    .second-container > .inner-container  {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }   
+
+
+</style>
+</html>
